@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Sun Aug 09 03:27:43 IST 2015</td>
+<td>Started on:</td><td>Sun Aug 09 03:33:49 IST 2015</td>
 </tr>
-<tr><td>Total time:</td><td>37 seconds (37828 ms)</td>
+<tr><td>Total time:</td><td>24 seconds (24625 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,15 +76,8 @@ function toggleAllBoxes() {
 </tr>
 <tr>
 <td title='test.GoogleSearch.searchGoogle()'><b>searchGoogle</b><br>Test class: test.GoogleSearch</td>
-<td><div><pre>testlink.api.java.client.TestLinkAPIException: 
-The xml-rpc call to TestLink API method tl.getProjects failed.
-Result[0] = {message=Can not authenticate client: invalid developer key, code=2000}
-
-	at testlink.api.java.client.TestLinkAPIClient.execXmlRpcMethodWithCache(TestLinkAPIClient.java:1209)
-	at testlink.api.java.client.TestLinkAPIClient.getProjects(TestLinkAPIClient.java:726)
-	at testlink.api.java.client.TestLinkAPIHelper.getProjectInfo(TestLinkAPIHelper.java:64)
-	at testlink.api.java.client.TestLinkAPIHelper.getProjectID(TestLinkAPIHelper.java:48)
-	at testlink.api.java.client.TestLinkAPIClient.reportTestCaseResult(TestLinkAPIClient.java:184)
+<td><div><pre>testlink.api.java.client.TestLinkAPIException: The plan GSP-TestPlan was not found and the test case GSP-1 could not be accessed to report a test result.
+	at testlink.api.java.client.TestLinkAPIClient.reportTestCaseResult(TestLinkAPIClient.java:192)
 	at test.GoogleSearch.reportResult(GoogleSearch.java:26)
 	at test.GoogleSearch.searchGoogle(GoogleSearch.java:67)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
@@ -111,16 +104,9 @@ Result[0] = {message=Can not authenticate client: invalid developer key, code=20
 	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
-</pre></div><a href='#' onClick='toggleBox("stack-trace10725399", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace10725399'><pre>testlink.api.java.client.TestLinkAPIException: 
-The xml-rpc call to TestLink API method tl.getProjects failed.
-Result[0] = {message=Can not authenticate client: invalid developer key, code=2000}
-
-	at testlink.api.java.client.TestLinkAPIClient.execXmlRpcMethodWithCache(TestLinkAPIClient.java:1209)
-	at testlink.api.java.client.TestLinkAPIClient.getProjects(TestLinkAPIClient.java:726)
-	at testlink.api.java.client.TestLinkAPIHelper.getProjectInfo(TestLinkAPIHelper.java:64)
-	at testlink.api.java.client.TestLinkAPIHelper.getProjectID(TestLinkAPIHelper.java:48)
-	at testlink.api.java.client.TestLinkAPIClient.reportTestCaseResult(TestLinkAPIClient.java:184)
+</pre></div><a href='#' onClick='toggleBox("stack-trace31473467", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace31473467'><pre>testlink.api.java.client.TestLinkAPIException: The plan GSP-TestPlan was not found and the test case GSP-1 could not be accessed to report a test result.
+	at testlink.api.java.client.TestLinkAPIClient.reportTestCaseResult(TestLinkAPIClient.java:192)
 	at test.GoogleSearch.reportResult(GoogleSearch.java:26)
 	at test.GoogleSearch.searchGoogle(GoogleSearch.java:67)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
@@ -148,8 +134,8 @@ Result[0] = {message=Can not authenticate client: invalid developer key, code=20
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
 </pre></div></td>
-<td>37</td>
-<td>test.GoogleSearch@fde0d5</td></tr>
+<td>24</td>
+<td>test.GoogleSearch@1b3d1e5</td></tr>
 </table><p>
 </body>
 </html>

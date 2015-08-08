@@ -15,7 +15,7 @@ import testlink.api.java.client.TestLinkAPIResults;
 
 public class GoogleSearch {
   
-	public static String DEVKEY="00bd13095d06c20b11a2993ca419d16b93c6cea607715faa19391e37c48fac33";
+	public static String DEVKEY="fcb75a5d649ed079300b46195d2616ac";
 	
 	public static String URL = "http://localhost//testlink//lib//api//xmlrpc//v1//xmlrpc.php";
 	

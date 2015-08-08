@@ -2,29 +2,19 @@
 <testng-results skipped="0" failed="1" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="37828" started-at="2015-08-08T21:57:43Z" finished-at="2015-08-08T21:58:21Z">
+  <suite name="Default suite" duration-ms="24625" started-at="2015-08-08T22:03:49Z" finished-at="2015-08-08T22:04:14Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="37828" started-at="2015-08-08T21:57:43Z" finished-at="2015-08-08T21:58:21Z">
+    <test name="Default test" duration-ms="24625" started-at="2015-08-08T22:03:49Z" finished-at="2015-08-08T22:04:14Z">
       <class name="test.GoogleSearch">
-        <test-method status="FAIL" signature="searchGoogle()[pri:0, instance:test.GoogleSearch@fde0d5]" name="searchGoogle" duration-ms="37762" started-at="2015-08-09T03:27:43Z" finished-at="2015-08-09T03:28:21Z">
+        <test-method status="FAIL" signature="searchGoogle()[pri:0, instance:test.GoogleSearch@1b3d1e5]" name="searchGoogle" duration-ms="24594" started-at="2015-08-09T03:33:49Z" finished-at="2015-08-09T03:34:14Z">
           <exception class="testlink.api.java.client.TestLinkAPIException">
             <message>
-              <![CDATA[
-The xml-rpc call to TestLink API method tl.getProjects failed.
-Result[0] = {message=Can not authenticate client: invalid developer key, code=2000}
-]]>
+              <![CDATA[The plan GSP-TestPlan was not found and the test case GSP-1 could not be accessed to report a test result.]]>
             </message>
             <full-stacktrace>
-              <![CDATA[testlink.api.java.client.TestLinkAPIException: 
-The xml-rpc call to TestLink API method tl.getProjects failed.
-Result[0] = {message=Can not authenticate client: invalid developer key, code=2000}
-
-	at testlink.api.java.client.TestLinkAPIClient.execXmlRpcMethodWithCache(TestLinkAPIClient.java:1209)
-	at testlink.api.java.client.TestLinkAPIClient.getProjects(TestLinkAPIClient.java:726)
-	at testlink.api.java.client.TestLinkAPIHelper.getProjectInfo(TestLinkAPIHelper.java:64)
-	at testlink.api.java.client.TestLinkAPIHelper.getProjectID(TestLinkAPIHelper.java:48)
-	at testlink.api.java.client.TestLinkAPIClient.reportTestCaseResult(TestLinkAPIClient.java:184)
+              <![CDATA[testlink.api.java.client.TestLinkAPIException: The plan GSP-TestPlan was not found and the test case GSP-1 could not be accessed to report a test result.
+	at testlink.api.java.client.TestLinkAPIClient.reportTestCaseResult(TestLinkAPIClient.java:192)
 	at test.GoogleSearch.reportResult(GoogleSearch.java:26)
 	at test.GoogleSearch.searchGoogle(GoogleSearch.java:67)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
