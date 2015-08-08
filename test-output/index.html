@@ -48,7 +48,7 @@
               <ul>
                 <li>
                   <a href="#" class="navigator-link " panel-name="test-xml-Default_suite">
-                    <span>C:\Users\Sumit\AppData\Local\Temp\testng-eclipse-1409859672\testng-customsuite.xml</span>
+                    <span>C:\Users\Sumit\AppData\Local\Temp\testng-eclipse-202763334\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -101,7 +101,7 @@
                     <div class="method-list-content failed suite-Default_suite">
                       <span>
                         <img width="3%" src="failed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="test.GoogleSearch" hash-for-method="f">f</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="test.GoogleSearch" hash-for-method="searchGoogle">searchGoogle</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-Default_suite -->
@@ -124,31 +124,20 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="f">
-                  </a> <!-- f -->
-                  <span class="method-name">f</span>
-                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element
-  (Session info: chrome=44.0.2403.130)
-  (Driver info: chromedriver=2.8.241075,platform=Windows NT 6.1 SP1 x86) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 577 milliseconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;2.39.0&apos;, revision: &apos;ff23eac&apos;, time: &apos;2013-12-16 16:11:15&apos;
-System info: host: &apos;Sumit-PC&apos;, ip: &apos;192.168.1.4&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_07&apos;
-Session ID: 9e6697093e927111c5bf62bdbd00e0bc
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{platform=XP, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={userDataDir=C:\Users\Sumit\AppData\Local\Temp\scoped_dir12832_26859}, rotatable=false, locationContextEnabled=true, version=44.0.2403.130, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, nativeEvents=true, webStorageEnabled=true, applicationCacheEnabled=false, takesScreenshot=true}]
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:193)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:145)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:554)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:307)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:348)
-	at org.openqa.selenium.By$ById.findElement(By.java:220)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:299)
-	at test.GoogleSearch.f(GoogleSearch.java:23)
+                  <a name="searchGoogle">
+                  </a> <!-- searchGoogle -->
+                  <span class="method-name">searchGoogle</span>
+                  <div class="stack-trace">testlink.api.java.client.TestLinkAPIException: 
+The xml-rpc call to TestLink API method tl.getProjects failed.
+Result[0] = {message=Can not authenticate client: invalid developer key, code=2000}
+
+	at testlink.api.java.client.TestLinkAPIClient.execXmlRpcMethodWithCache(TestLinkAPIClient.java:1209)
+	at testlink.api.java.client.TestLinkAPIClient.getProjects(TestLinkAPIClient.java:726)
+	at testlink.api.java.client.TestLinkAPIHelper.getProjectInfo(TestLinkAPIHelper.java:64)
+	at testlink.api.java.client.TestLinkAPIHelper.getProjectID(TestLinkAPIHelper.java:48)
+	at testlink.api.java.client.TestLinkAPIClient.reportTestCaseResult(TestLinkAPIClient.java:184)
+	at test.GoogleSearch.reportResult(GoogleSearch.java:26)
+	at test.GoogleSearch.searchGoogle(GoogleSearch.java:67)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -182,7 +171,7 @@ Capabilities [{platform=XP, acceptSslCerts=true, javascriptEnabled=true, browser
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\Sumit\AppData\Local\Temp\testng-eclipse-1409859672\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\Sumit\AppData\Local\Temp\testng-eclipse-202763334\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -233,14 +222,14 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(1);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'f')
+data.setCell(0, 1, 'searchGoogle')
 data.setCell(0, 2, 'test.GoogleSearch')
-data.setCell(0, 3, 49098);
+data.setCell(0, 3, 37762);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 49 seconds</span>
+              <span class="suite-total-time">Total running time: 37 seconds</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -270,7 +259,7 @@ return data;
               <div class="test-method">
                 <img src="failed.png">
                 </img>
-                <span class="method-name">f</span>
+                <span class="method-name">searchGoogle</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->

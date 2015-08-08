@@ -5,7 +5,7 @@
     <classes>
       <class name="test.GoogleSearch">
         <methods>
-          <include name="f"/>
+          <include name="searchGoogle"/>
         </methods>
       </class> <!-- test.GoogleSearch -->
     </classes>

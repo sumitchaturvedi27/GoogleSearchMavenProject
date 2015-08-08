@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Sun Aug 09 02:10:04 IST 2015</td>
+<td>Started on:</td><td>Sun Aug 09 03:27:43 IST 2015</td>
 </tr>
-<tr><td>Total time:</td><td>49 seconds (49357 ms)</td>
+<tr><td>Total time:</td><td>37 seconds (37828 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -75,29 +75,18 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='test.GoogleSearch.f()'><b>f</b><br>Test class: test.GoogleSearch</td>
-<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element
-  (Session info: chrome=44.0.2403.130)
-  (Driver info: chromedriver=2.8.241075,platform=Windows NT 6.1 SP1 x86) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 577 milliseconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;2.39.0&apos;, revision: &apos;ff23eac&apos;, time: &apos;2013-12-16 16:11:15&apos;
-System info: host: &apos;Sumit-PC&apos;, ip: &apos;192.168.1.4&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_07&apos;
-Session ID: 9e6697093e927111c5bf62bdbd00e0bc
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{platform=XP, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={userDataDir=C:\Users\Sumit\AppData\Local\Temp\scoped_dir12832_26859}, rotatable=false, locationContextEnabled=true, version=44.0.2403.130, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, nativeEvents=true, webStorageEnabled=true, applicationCacheEnabled=false, takesScreenshot=true}]
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:193)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:145)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:554)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:307)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:348)
-	at org.openqa.selenium.By$ById.findElement(By.java:220)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:299)
-	at test.GoogleSearch.f(GoogleSearch.java:23)
+<td title='test.GoogleSearch.searchGoogle()'><b>searchGoogle</b><br>Test class: test.GoogleSearch</td>
+<td><div><pre>testlink.api.java.client.TestLinkAPIException: 
+The xml-rpc call to TestLink API method tl.getProjects failed.
+Result[0] = {message=Can not authenticate client: invalid developer key, code=2000}
+
+	at testlink.api.java.client.TestLinkAPIClient.execXmlRpcMethodWithCache(TestLinkAPIClient.java:1209)
+	at testlink.api.java.client.TestLinkAPIClient.getProjects(TestLinkAPIClient.java:726)
+	at testlink.api.java.client.TestLinkAPIHelper.getProjectInfo(TestLinkAPIHelper.java:64)
+	at testlink.api.java.client.TestLinkAPIHelper.getProjectID(TestLinkAPIHelper.java:48)
+	at testlink.api.java.client.TestLinkAPIClient.reportTestCaseResult(TestLinkAPIClient.java:184)
+	at test.GoogleSearch.reportResult(GoogleSearch.java:26)
+	at test.GoogleSearch.searchGoogle(GoogleSearch.java:67)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -122,29 +111,18 @@ Capabilities [{platform=XP, acceptSslCerts=true, javascriptEnabled=true, browser
 	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
-</pre></div><a href='#' onClick='toggleBox("stack-trace18793703", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace18793703'><pre>org.openqa.selenium.NoSuchElementException: no such element
-  (Session info: chrome=44.0.2403.130)
-  (Driver info: chromedriver=2.8.241075,platform=Windows NT 6.1 SP1 x86) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 577 milliseconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;2.39.0&apos;, revision: &apos;ff23eac&apos;, time: &apos;2013-12-16 16:11:15&apos;
-System info: host: &apos;Sumit-PC&apos;, ip: &apos;192.168.1.4&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_07&apos;
-Session ID: 9e6697093e927111c5bf62bdbd00e0bc
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{platform=XP, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={userDataDir=C:\Users\Sumit\AppData\Local\Temp\scoped_dir12832_26859}, rotatable=false, locationContextEnabled=true, version=44.0.2403.130, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, nativeEvents=true, webStorageEnabled=true, applicationCacheEnabled=false, takesScreenshot=true}]
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:193)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:145)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:554)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:307)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:348)
-	at org.openqa.selenium.By$ById.findElement(By.java:220)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:299)
-	at test.GoogleSearch.f(GoogleSearch.java:23)
+</pre></div><a href='#' onClick='toggleBox("stack-trace10725399", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace10725399'><pre>testlink.api.java.client.TestLinkAPIException: 
+The xml-rpc call to TestLink API method tl.getProjects failed.
+Result[0] = {message=Can not authenticate client: invalid developer key, code=2000}
+
+	at testlink.api.java.client.TestLinkAPIClient.execXmlRpcMethodWithCache(TestLinkAPIClient.java:1209)
+	at testlink.api.java.client.TestLinkAPIClient.getProjects(TestLinkAPIClient.java:726)
+	at testlink.api.java.client.TestLinkAPIHelper.getProjectInfo(TestLinkAPIHelper.java:64)
+	at testlink.api.java.client.TestLinkAPIHelper.getProjectID(TestLinkAPIHelper.java:48)
+	at testlink.api.java.client.TestLinkAPIClient.reportTestCaseResult(TestLinkAPIClient.java:184)
+	at test.GoogleSearch.reportResult(GoogleSearch.java:26)
+	at test.GoogleSearch.searchGoogle(GoogleSearch.java:67)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -170,8 +148,8 @@ Capabilities [{platform=XP, acceptSslCerts=true, javascriptEnabled=true, browser
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
 </pre></div></td>
-<td>49</td>
-<td>test.GoogleSearch@6ac18c</td></tr>
+<td>37</td>
+<td>test.GoogleSearch@fde0d5</td></tr>
 </table><p>
 </body>
 </html>
