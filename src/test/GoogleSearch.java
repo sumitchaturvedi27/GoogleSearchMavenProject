@@ -44,7 +44,7 @@ public class GoogleSearch {
 	  String Build="GSP-9.5.4.160";
 	  String Notes=null;
 	  String Result=null;
-	  int j;
+	  int i;
 	  try {
 	  driver.get("http://www.google.com");
 	  
