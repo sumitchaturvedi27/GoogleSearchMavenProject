@@ -64,6 +64,9 @@
         <configuration>
           <source>1.7</source>
           <target>1.7</target>
+          <suiteXmlFiles>
+              <suiteXmlFile>testng.xml</suiteXmlFile>
+          </suiteXmlFiles>
         </configuration>
       </plugin>
     </plugins>
