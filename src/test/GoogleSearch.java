@@ -6,12 +6,12 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.Test;
 
-import org.apache.xmlrpc.client.XmlRpcClient;
-import org.apache.xmlrpc.*;
+//import org.apache.xmlrpc.client.XmlRpcClient;
+//import org.apache.xmlrpc.*;
 import org.apache.ws.commons.serialize.DOMSerializer;
-import testlink.api.java.client.TestLinkAPIClient;
-import testlink.api.java.client.TestLinkAPIException;
-import testlink.api.java.client.TestLinkAPIResults;
+//import testlink.api.java.client.TestLinkAPIClient;
+//import testlink.api.java.client.TestLinkAPIException;
+//import testlink.api.java.client.TestLinkAPIResults;
 
 public class GoogleSearch {
   
@@ -27,7 +27,7 @@ public class GoogleSearch {
 		
 	} */
   @Test
-  public void searchGoogle () throws TestLinkAPIException {
+  public void searchGoogle ()  {
 	  
 	 
 	  
@@ -57,10 +57,10 @@ public class GoogleSearch {
 	  
 	  
 	  
-	  Result = TestLinkAPIResults.TEST_PASSED;
+	  //Result = TestLinkAPIResults.TEST_PASSED;
 	  Notes = "Executed Successfully";
 	  } catch (Exception e) {
-		  Result = TestLinkAPIResults.TEST_FAILED;
+		  //Result = TestLinkAPIResults.TEST_FAILED;
 		  Notes = "Executed Failed";
 	  }
 	  finally {

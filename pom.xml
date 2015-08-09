@@ -47,13 +47,13 @@
 <version>2.0.1</version>
 <!-- <packaging>hpi</packaging> -->
 </dependency>
-      <!--  TestNG 
+    <!--   TestNG --> 
       <dependency>
-          <groupId>org.testng.eclipse_6.9.5.201505260426</groupId>
-          <artifactId>org.testng.eclipse_6.9.5.201505260426</artifactId>
-          <version>6.9.5</version>
-          <package>jar</package>
-      </dependency> -->
+          <groupId>org.testng</groupId>
+          <artifactId>testng</artifactId>
+          <version>6.9.6</version>
+      <!--     <package>jar</package> -->
+      </dependency> 
   </dependencies>
   <build>
     <sourceDirectory>src</sourceDirectory>
