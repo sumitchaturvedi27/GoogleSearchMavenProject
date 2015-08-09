@@ -19,13 +19,13 @@ public class GoogleSearch {
 	
 	public static String URL = "http://localhost//testlink//lib//api//xmlrpc//v1//xmlrpc.php";
 	
-	public void reportResult(String testProject, String testPlan, String testCase, String Build, String Notes, String Result) throws TestLinkAPIException {
+	/*public void reportResult(String testProject, String testPlan, String testCase, String Build, String Notes, String Result) throws TestLinkAPIException {
 		
 		TestLinkAPIClient api = new TestLinkAPIClient (DEVKEY, URL);
 		
 		api.reportTestCaseResult(testProject, testPlan, testCase, Build, Notes, Result);
 		
-	}
+	} */
   @Test
   public void searchGoogle () throws TestLinkAPIException {
 	  
@@ -44,7 +44,7 @@ public class GoogleSearch {
 	  String Build="GSP-9.5.4.160";
 	  String Notes=null;
 	  String Result=null;
-	  int i;
+	  int j;
 	  try {
 	  driver.get("http://www.google.com");
 	  
@@ -64,7 +64,7 @@ public class GoogleSearch {
 		  Notes = "Executed Failed";
 	  }
 	  finally {
-		  t.reportResult(testProject, testPlan, testCase, Build, Notes, Result);
+		//  t.reportResult(testProject, testPlan, testCase, Build, Notes, Result);
 		  driver.quit();
 	  }
   }

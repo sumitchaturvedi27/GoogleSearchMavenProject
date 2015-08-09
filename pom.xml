@@ -24,19 +24,29 @@
           <version>2.39.0</version>
       </dependency> -->
       
-       <dependency>
+    <!--    <dependency>
 	<groupId>org.seleniumhq.selenium</groupId>
 	<artifactId>selenium-remote-driver</artifactId>
 	<version>2.44.0</version>
-</dependency>
-
+</dependency> -->
+<dependency>
+        <groupId>org.seleniumhq.selenium</groupId>
+        <artifactId>selenium-chrome-driver</artifactId>
+        <version>2.47.1</version>
+    </dependency> 
        <dependency>
   <groupId>org.testng</groupId>
   <artifactId>testng</artifactId>
   <version>6.1.1</version>
   <scope>test</scope>
 </dependency>
-       
+       <dependency>
+ <groupId>org.jvnet.hudson.plugins</groupId>
+<artifactId>testlink</artifactId>
+<!-- <name>TestLink Hudson Plugin</name> -->
+<version>2.0.1</version>
+<!-- <packaging>hpi</packaging> -->
+</dependency>
       <!--  TestNG 
       <dependency>
           <groupId>org.testng.eclipse_6.9.5.201505260426</groupId>
