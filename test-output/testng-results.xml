@@ -2,12 +2,12 @@
 <testng-results skipped="0" failed="1" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="24625" started-at="2015-08-08T22:03:49Z" finished-at="2015-08-08T22:04:14Z">
+  <suite name="Default suite" duration-ms="59818" started-at="2015-08-09T08:03:58Z" finished-at="2015-08-09T08:04:58Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="24625" started-at="2015-08-08T22:03:49Z" finished-at="2015-08-08T22:04:14Z">
+    <test name="Default test" duration-ms="59818" started-at="2015-08-09T08:03:58Z" finished-at="2015-08-09T08:04:58Z">
       <class name="test.GoogleSearch">
-        <test-method status="FAIL" signature="searchGoogle()[pri:0, instance:test.GoogleSearch@1b3d1e5]" name="searchGoogle" duration-ms="24594" started-at="2015-08-09T03:33:49Z" finished-at="2015-08-09T03:34:14Z">
+        <test-method status="FAIL" signature="searchGoogle()[pri:0, instance:test.GoogleSearch@e2f8c1]" name="searchGoogle" duration-ms="59765" started-at="2015-08-09T13:33:58Z" finished-at="2015-08-09T13:34:58Z">
           <exception class="testlink.api.java.client.TestLinkAPIException">
             <message>
               <![CDATA[The plan GSP-TestPlan was not found and the test case GSP-1 could not be accessed to report a test result.]]>
