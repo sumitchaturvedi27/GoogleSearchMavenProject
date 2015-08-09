@@ -8,7 +8,7 @@ import org.testng.annotations.Test;
 
 //import org.apache.xmlrpc.client.XmlRpcClient;
 //import org.apache.xmlrpc.*;
-import org.apache.ws.commons.serialize.DOMSerializer;
+//import org.apache.ws.commons.serialize.DOMSerializer;
 //import testlink.api.java.client.TestLinkAPIClient;
 //import testlink.api.java.client.TestLinkAPIException;
 //import testlink.api.java.client.TestLinkAPIResults;
