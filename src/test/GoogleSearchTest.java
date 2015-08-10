@@ -38,7 +38,7 @@ public class GoogleSearchTest {
 	  GoogleSearchTest t = new GoogleSearchTest();
 	  
 	  String testProject="GoogleSearch_Project";
-	  String testPlan="GSP-TestPlan";
+	  String testPlan="GSP_TestPlan";
 	  String testSuite="GSP-TS1";
 	  String testCase="GSP-1";
 	  String Build="GSP-9.5.4.160";
