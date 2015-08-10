@@ -1,53 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" total="1" passed="0">
+<testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="59818" started-at="2015-08-09T08:03:58Z" finished-at="2015-08-09T08:04:58Z">
+  <suite name="Suite" duration-ms="22963" started-at="2015-08-10T05:37:29Z" finished-at="2015-08-10T05:37:52Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="59818" started-at="2015-08-09T08:03:58Z" finished-at="2015-08-09T08:04:58Z">
-      <class name="test.GoogleSearch">
-        <test-method status="FAIL" signature="searchGoogle()[pri:0, instance:test.GoogleSearch@e2f8c1]" name="searchGoogle" duration-ms="59765" started-at="2015-08-09T13:33:58Z" finished-at="2015-08-09T13:34:58Z">
-          <exception class="testlink.api.java.client.TestLinkAPIException">
-            <message>
-              <![CDATA[The plan GSP-TestPlan was not found and the test case GSP-1 could not be accessed to report a test result.]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[testlink.api.java.client.TestLinkAPIException: The plan GSP-TestPlan was not found and the test case GSP-1 could not be accessed to report a test result.
-	at testlink.api.java.client.TestLinkAPIClient.reportTestCaseResult(TestLinkAPIClient.java:192)
-	at test.GoogleSearch.reportResult(GoogleSearch.java:26)
-	at test.GoogleSearch.searchGoogle(GoogleSearch.java:67)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
-	at org.testng.TestRunner.privateRun(TestRunner.java:767)
-	at org.testng.TestRunner.run(TestRunner.java:617)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
-	at org.testng.TestNG.run(TestNG.java:1057)
-	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
-]]>
-            </full-stacktrace>
-          </exception> <!-- testlink.api.java.client.TestLinkAPIException -->
+    <test name="searchGoogle" duration-ms="22963" started-at="2015-08-10T05:37:29Z" finished-at="2015-08-10T05:37:52Z">
+      <class name="test.GoogleSearchTest">
+        <test-method status="PASS" signature="searchGoogle()[pri:0, instance:test.GoogleSearchTest@163769]" name="searchGoogle" duration-ms="22943" started-at="2015-08-10T11:07:29Z" finished-at="2015-08-10T11:07:52Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- searchGoogle -->
-      </class> <!-- test.GoogleSearch -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+      </class> <!-- test.GoogleSearchTest -->
+    </test> <!-- searchGoogle -->
+  </suite> <!-- Suite -->
 </testng-results>

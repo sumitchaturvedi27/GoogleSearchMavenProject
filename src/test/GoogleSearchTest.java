@@ -1,0 +1,72 @@
+package test;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.Test;
+
+//import org.apache.xmlrpc.client.XmlRpcClient;
+//import org.apache.xmlrpc.*;
+//import org.apache.ws.commons.serialize.DOMSerializer;
+//import testlink.api.java.client.TestLinkAPIClient;
+//import testlink.api.java.client.TestLinkAPIException;
+//import testlink.api.java.client.TestLinkAPIResults;
+
+public class GoogleSearchTest {
+  
+	public static String DEVKEY="0919fe8239ba5be746ae7a1d44f50a7f9a1e6dff7dbc2da64a3577c8b9a24854";
+	
+	public static String URL = "http://localhost//testlink//lib//api//xmlrpc//v1//xmlrpc.php";
+	
+	/*public void reportResult(String testProject, String testPlan, String testCase, String Build, String Notes, String Result) throws TestLinkAPIException {
+		
+		TestLinkAPIClient api = new TestLinkAPIClient (DEVKEY, URL);
+		
+		api.reportTestCaseResult(testProject, testPlan, testCase, Build, Notes, Result);
+		
+	} */
+  @Test
+  public void searchGoogle ()  {
+	  
+	 
+	  
+	  System.setProperty("webdriver.chrome.driver", "C://Selenium//chromedriver.exe");
+	  
+	  WebDriver driver = new ChromeDriver();
+
+	  GoogleSearchTest t = new GoogleSearchTest();
+	  
+	  String testProject="GoogleSearch_Project";
+	  String testPlan="GSP-TestPlan";
+	  String testSuite="GSP-TS1";
+	  String testCase="GSP-1";
+	  String Build="GSP-9.5.4.160";
+	  String Notes=null;
+	  String Result=null;
+	  int j;
+	  try {
+	  driver.get("http://www.google.com");
+	  
+	  WebElement searchText = driver.findElement(By.name("q"));
+	  searchText.sendKeys("LearnSelenium");
+	  
+	  
+	  WebElement searchButton = driver.findElement(By.name("btnG"));
+	  searchButton.click();
+	  
+	  
+	  
+	  //Result = TestLinkAPIResults.TEST_PASSED;
+	  Notes = "Executed Successfully";
+	  } catch (Exception e) {
+		  //Result = TestLinkAPIResults.TEST_FAILED;
+		  Notes = "Executed Failed";
+	  }
+	  finally {
+		//  t.reportResult(testProject, testPlan, testCase, Build, Notes, Result);
+		  driver.quit();
+	  }
+  }
+}
+

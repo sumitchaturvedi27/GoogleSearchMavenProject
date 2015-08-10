@@ -1,7 +1,7 @@
 <suite name = "Suite" aprallel="none">
     <test name = "searchGoogle">
         <classes>
-            <class name = "test.GoogleSearch" />
+            <class name = "test.GoogleSearchTest" ></class>
         </classes>
     </test>
 </suite>

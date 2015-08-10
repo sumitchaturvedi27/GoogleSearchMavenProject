@@ -8,6 +8,9 @@
   <description>GoogleSearchMavenProject</description>
  <url>https://github.com/sumitchaturvedi27/GoogleSearchMavenProject</url> 
   
+ <properties>
+     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+  </properties>
   <dependencies>
       <!-- Log4J  -->
       <dependency>
@@ -34,31 +37,32 @@
         <artifactId>selenium-chrome-driver</artifactId>
         <version>2.47.1</version>
     </dependency> 
-       <dependency>
+        <!-- <dependency>
   <groupId>org.testng</groupId>
   <artifactId>testng</artifactId>
   <version>6.1.1</version>
   <scope>test</scope>
-</dependency>
-       <dependency>
+</dependency> -->
+  <!--     <dependency>
  <groupId>org.jvnet.hudson.plugins</groupId>
 <artifactId>testlink</artifactId>
-<!-- <name>TestLink Hudson Plugin</name> -->
+ <name>TestLink Hudson Plugin</name> 
 <version>2.0.1</version>
-<!-- <packaging>hpi</packaging> -->
-</dependency>
+ <packaging>hpi</packaging> 
+</dependency>  --> 
     <!--   TestNG --> 
-      <dependency>
+       <dependency>
           <groupId>org.testng</groupId>
           <artifactId>testng</artifactId>
-          <version>6.9.6</version>
-      <!--     <package>jar</package> -->
-      </dependency> 
+          <version>6.8.8</version>
+       <!--    <scope>test</scope>  -->
+        <!--    <package>jar</package>  --> 
+      </dependency>   
   </dependencies>
   <build>
     <sourceDirectory>src</sourceDirectory>
     <plugins>
-      <plugin>
+      <!-- <plugin>
         <artifactId>maven-compiler-plugin</artifactId>
         <version>3.1</version>
         <configuration>
@@ -66,6 +70,16 @@
           <target>1.7</target>
           <suiteXmlFiles>
               <suiteXmlFile>testng.xml</suiteXmlFile>
+          </suiteXmlFiles>
+        </configuration>
+      </plugin> -->
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-surefire-plugin</artifactId>
+        <version>2.18.1</version>
+        <configuration>
+          <suiteXmlFiles>
+            <suiteXmlFile>testng.xml</suiteXmlFile>
           </suiteXmlFiles>
         </configuration>
       </plugin>
